@@ -12,7 +12,7 @@ class Store {
       const removeListener = () => {
         this.listeners = this.listeners.filter((l) => listener !== l);
       };
-      removeListener;
+      return removeListener;
   }
 
   setState(state){
