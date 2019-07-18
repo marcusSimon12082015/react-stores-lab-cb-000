@@ -4,6 +4,7 @@ class Store {
   // CounterStore is going to inherit from it.
   constructor(initialState){
     this.state = initialState;
+    this.listeners = [];
   }
 
   setState(state){
