@@ -17,6 +17,9 @@ class Store {
 
   setState(state){
     this.state = state;
+    for(const listener in this.listeners){
+      listener(state);
+    }
   }
 
   getState(){
