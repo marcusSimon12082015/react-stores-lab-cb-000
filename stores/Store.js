@@ -7,6 +7,10 @@ class Store {
     this.listeners = [];
   }
 
+  addListener(listener){
+      this.listener.push(listener);
+  }
+
   setState(state){
     this.state = state;
   }
